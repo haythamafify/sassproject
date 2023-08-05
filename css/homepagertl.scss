@@ -1,0 +1,9 @@
+@use "sass/helpers/varaible" as *;
+.header {
+  .logo {
+    float: $float-right;
+  }
+  .navbar {
+    float: $float-right;
+  }
+}

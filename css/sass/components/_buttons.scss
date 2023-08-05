@@ -1,0 +1,40 @@
+@use "../helpers/_varaible.scss" as *;
+
+.main-button {
+  background-color: rgba($color: $redColor, $alpha: 0.6);
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 6px;
+  padding: 10px 15px;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  &:hover {
+    background-color: $redColor;
+  }
+}
+.the-togler {
+  background-color: $redColor;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 22px;
+  right: 50px;
+  display: none;
+  @media #{$maxmobile} {
+    display: block;
+  }
+  span {
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #fff;
+
+    &:not(:last-child) {
+      margin-bottom: 3px;
+    }
+  }
+}

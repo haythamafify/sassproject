@@ -1,0 +1,38 @@
+@mixin opacit($value) {
+  zoom: 1;
+  $opacityie: $value * 100;
+  filter: alpha(opacity = $opacityie);
+  opacity: $value;
+}
+
+@mixin transition($agrgs...) {
+  transition: $agrgs;
+  -webkit-transition: $agrgs;
+  -moz-transition: $agrgs;
+  -o-transition: $agrgs;
+  -ms-transition: $agrgs;
+}
+
+.ele {
+  @include opacit(100);
+  @include transition(all 0.3s);
+  color: magenta;
+
+  font: {
+    size: 30px;
+    weight: bold;
+    family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  }
+  border: {
+    right: 2px solid #ddd;
+  }
+}
+
+%errror {
+  color: red($color: #000000);
+  font-weight: bold;
+}
+.element {
+  @extend %errror;
+}
+// t2

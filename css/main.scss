@@ -1,0 +1,12 @@
+@use "./sass/helpers/varaible";
+@use "../css/sass/helpers/mixins";
+@use "./sass/helpers/functions";
+@use "./sass/layout/header";
+@use "./sass/components/buttons";
+@use "./sass/pages/homepage";
+@use "sass/components/headings";
+@use "./sass/layout/footer";
+@use "./sass/layout/grid";
+@use "./sass/pages/global-page";
+/*test*/
+@use "../css/sass/helpers/trains"

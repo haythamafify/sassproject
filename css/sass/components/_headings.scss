@@ -1,0 +1,31 @@
+@use "../helpers/varaible" as *;
+
+
+.headings {
+    position: relative;
+h2{
+        text-align: center;
+            background-color: $redColor;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            margin: 40px auto;
+            width: fit-content;
+        @media #{$maxmobile} {
+                 width: 300px;
+        }
+            &::before {
+                content: "";
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                background-color: $greyColor;
+                z-index: -1;
+            }
+}
+
+
+}

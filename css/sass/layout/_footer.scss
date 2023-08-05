@@ -1,0 +1,138 @@
+@use "../helpers/varaible" as *;
+
+/*Start footer*/
+.footer {
+  background-color: $greyColor;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-top: 50px;
+  .footer-tittle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .gallery,
+  .info,
+  .contact {
+    @media #{$minSmall} {
+      float: $float-left;
+    }
+  }
+
+  .gallery {
+    @media #{$minSmall} {
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-bottom: 30px;
+    }
+
+    @media #{$minumMedium} {
+      width: 50%;
+    }
+    .img-box {
+      overflow: hidden;
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .text-footer {
+        @media #{$minSmall} {
+          float: $float-left;
+          margin-left: 15px;
+          margin-right: 15px;
+          width: calc(100% - 180px);
+        }
+
+        h4 {
+          color: $redColor;
+          margin: 10px 0 0;
+        }
+        p {
+          color: $pColor;
+          line-height: 1.9;
+        }
+      }
+    }
+  }
+
+  .info,
+  .contact {
+    @media #{$minSmall} {
+      width: 50%;
+    }
+    @media #{$minumMedium} {
+      width: 25%;
+    }
+
+    form {
+      input,
+      textarea {
+        margin-bottom: 15px;
+        border-color: 2px solid #888;
+        padding: 15px;
+        border-radius: 10px;
+        width: 100%;
+      }
+      textarea {
+        height: 140px;
+      }
+    }
+  }
+
+  .footer-tittle {
+    color: #444;
+    font-weight: normal;
+  }
+
+  .info {
+    text-align: center;
+
+    ul {
+      color: #888;
+      line-height: 2;
+    }
+    li {
+      color: #888;
+      span {
+        color: $redColor;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+    .workinghours {
+      color: #888;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #888;
+    }
+  }
+
+  .copyright {
+    padding: 25px 0;
+    color: #888;
+    border-top: 1px solid #c5c5c5;
+    margin-top: 30px;
+    text-align: center;
+    .text-copy {
+      @media #{$minSmall} {
+        width: 50%;
+        float: $float-left;
+      }
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .author-copy {
+      @media #{$minSmall} {
+        text-align: $text-align-right;
+        float: $float-left;
+        width: 50%;
+      }
+    }
+  }
+}
+
+/*End footer*/
